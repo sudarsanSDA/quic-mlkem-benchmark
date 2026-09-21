@@ -1,7 +1,7 @@
 # Quantifying Handshake Latency and Anti-Amplification Limits of Post-Quantum Key Encapsulation (ML-KEM) in QUIC over Degraded Networks
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22879417-blue)](https://doi.org/10.5281/zenodo.22879417)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22879418-blue)](https://doi.org/10.5281/zenodo.22879418)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![RFC: 9000](https://img.shields.io/badge/RFC-9000%20Compliant-green.svg)](https://www.rfc-editor.org/rfc/rfc9000)
 
@@ -99,7 +99,7 @@ The empirical evaluation investigates the transport-layer implications of deploy
   author = {Sudarsan, P.},
   title = {Quantifying Handshake Latency and Anti-Amplification Limits of Post-Quantum Key Encapsulation (ML-KEM) in QUIC over Degraded Networks},
   year = {2026},
-  doi = {10.5281/zenodo.22879417}
+  doi = {10.5281/zenodo.22879418}
 }
 ```
 
