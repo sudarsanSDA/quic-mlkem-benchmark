@@ -1,7 +1,7 @@
 # Quantifying Handshake Latency and Anti-Amplification Limits of Post-Quantum Key Encapsulation (ML-KEM) in QUIC over Degraded Networks
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.xxxxxxx-blue)](https://doi.org/10.5281/zenodo.xxxxxxx)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22878525-blue)](https://doi.org/10.5281/zenodo.22878525)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![RFC: 9000](https://img.shields.io/badge/RFC-9000%20Compliant-green.svg)](https://www.rfc-editor.org/rfc/rfc9000)
 
