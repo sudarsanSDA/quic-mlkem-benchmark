@@ -1,0 +1,46 @@
+# Full PCAP and TLS key dumps
+runs/
+*.pcap
+!replication_package/sample_pcaps/*.pcap
+*.keys
+!replication_package/sample_pcaps/*.keys
+
+# Python artifacts and virtual environments
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+venv/
+.venv/
+env/
+*.egg-info/
+
+# LaTeX documents, manuscripts, and compilation artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+*.tex
+*.bib
+*.pdf
+main.tex
+main.pdf
+references.bib
+
+# Editor and OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary staging bundles
+*.zip
+overleaf_bundle/
