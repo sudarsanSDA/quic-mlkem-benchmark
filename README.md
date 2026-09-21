@@ -99,7 +99,7 @@ The empirical evaluation investigates the transport-layer implications of deploy
   author = {Sudarsan, P.},
   title = {Quantifying Handshake Latency and Anti-Amplification Limits of Post-Quantum Key Encapsulation (ML-KEM) in QUIC over Degraded Networks},
   year = {2026},
-  doi = {10.5281/zenodo.xxxxxxx}
+  doi = {10.5281/zenodo.22878525}
 }
 ```
 
