@@ -21,3 +21,6 @@ ip netns exec client_ns ip link set veth_client up
 ip netns exec server_ns ip addr add 10.0.0.2/24 dev veth_server
 ip netns exec server_ns ip link set lo up
 ip netns exec server_ns ip link set veth_server up
+
+# Pre-populate ARP neighbor entries so iteration 1 does not incur a +1 RTT ARP spike
+ip netns exec client_ns ping -c 1 -W 1 10.0.0.2 >/dev/null 2>&1 || true

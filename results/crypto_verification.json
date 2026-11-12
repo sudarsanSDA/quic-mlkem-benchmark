@@ -1,0 +1,408 @@
+{
+  "primitives": {
+    "ML-KEM-512": {
+      "backend": "liboqs",
+      "ek_bytes": 800,
+      "ct_bytes": 768,
+      "ss_bytes": 32,
+      "keygen_ms": 0.8417,
+      "encaps_ms": 0.126,
+      "decaps_ms": 0.0838,
+      "implicit_rejection_verified": true
+    },
+    "ML-KEM-768": {
+      "backend": "liboqs",
+      "ek_bytes": 1184,
+      "ct_bytes": 1088,
+      "ss_bytes": 32,
+      "keygen_ms": 0.1153,
+      "encaps_ms": 0.1076,
+      "decaps_ms": 0.1466,
+      "implicit_rejection_verified": true
+    },
+    "ML-KEM-1024": {
+      "backend": "liboqs",
+      "ek_bytes": 1568,
+      "ct_bytes": 1568,
+      "ss_bytes": 32,
+      "keygen_ms": 0.1605,
+      "encaps_ms": 0.1208,
+      "decaps_ms": 0.1359,
+      "implicit_rejection_verified": true
+    }
+  },
+  "e2e_positive": {
+    "X25519": {
+      "client_suite": "X25519",
+      "server_suite": "X25519",
+      "tamper_ciphertext": false,
+      "handshake_succeeded": true,
+      "asset_verified": true,
+      "error": "",
+      "client_state": {
+        "role": "client",
+        "configured_suite": "X25519",
+        "negotiated_suite": "X25519",
+        "negotiated_group": "0x001d",
+        "is_hybrid": false,
+        "backend_used": "x25519",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.0,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 32,
+        "server_share_bytes": 32,
+        "client_hello_bytes": 224,
+        "server_hello_bytes": 90,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "",
+        "secret_sha256_prefix": "fc05f4476c447379"
+      },
+      "server_state": {
+        "role": "server",
+        "configured_suite": "X25519",
+        "negotiated_suite": "X25519",
+        "negotiated_group": "0x001d",
+        "is_hybrid": false,
+        "backend_used": "x25519",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.0,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 32,
+        "server_share_bytes": 32,
+        "client_hello_bytes": 224,
+        "server_hello_bytes": 90,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "",
+        "secret_sha256_prefix": "fc05f4476c447379"
+      },
+      "client_server_secret_match": true,
+      "mlkem_ss_match": false,
+      "keylog_labels_matched": [
+        "CLIENT_HANDSHAKE_TRAFFIC_SECRET:3b46923db8ae3f7ff00581c3342c5b8547796e18fdaa206d1eef98451f8cb6e6",
+        "CLIENT_TRAFFIC_SECRET_0:3b46923db8ae3f7ff00581c3342c5b8547796e18fdaa206d1eef98451f8cb6e6",
+        "SERVER_HANDSHAKE_TRAFFIC_SECRET:3b46923db8ae3f7ff00581c3342c5b8547796e18fdaa206d1eef98451f8cb6e6",
+        "SERVER_TRAFFIC_SECRET_0:3b46923db8ae3f7ff00581c3342c5b8547796e18fdaa206d1eef98451f8cb6e6"
+      ]
+    },
+    "ML-KEM-512": {
+      "client_suite": "ML-KEM-512",
+      "server_suite": "ML-KEM-512",
+      "tamper_ciphertext": false,
+      "handshake_succeeded": true,
+      "asset_verified": true,
+      "error": "",
+      "client_state": {
+        "role": "client",
+        "configured_suite": "ML-KEM-512",
+        "negotiated_suite": "ML-KEM-512",
+        "negotiated_group": "0x0200",
+        "is_hybrid": false,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.1874,
+        "encaps_ms": 0.0,
+        "decaps_ms": 0.122,
+        "client_share_bytes": 800,
+        "server_share_bytes": 768,
+        "client_hello_bytes": 992,
+        "server_hello_bytes": 826,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "b50bc66c071242ae",
+        "secret_sha256_prefix": "b50bc66c071242ae"
+      },
+      "server_state": {
+        "role": "server",
+        "configured_suite": "ML-KEM-512",
+        "negotiated_suite": "ML-KEM-512",
+        "negotiated_group": "0x0200",
+        "is_hybrid": false,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.1827,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 800,
+        "server_share_bytes": 768,
+        "client_hello_bytes": 992,
+        "server_hello_bytes": 826,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "b50bc66c071242ae",
+        "secret_sha256_prefix": "b50bc66c071242ae"
+      },
+      "client_server_secret_match": true,
+      "mlkem_ss_match": true,
+      "keylog_labels_matched": [
+        "CLIENT_HANDSHAKE_TRAFFIC_SECRET:27da8cc1aca8251a388788519479c2b31444a24e219d78ed5ab6d51468183938",
+        "CLIENT_TRAFFIC_SECRET_0:27da8cc1aca8251a388788519479c2b31444a24e219d78ed5ab6d51468183938",
+        "SERVER_HANDSHAKE_TRAFFIC_SECRET:27da8cc1aca8251a388788519479c2b31444a24e219d78ed5ab6d51468183938",
+        "SERVER_TRAFFIC_SECRET_0:27da8cc1aca8251a388788519479c2b31444a24e219d78ed5ab6d51468183938"
+      ]
+    },
+    "ML-KEM-768": {
+      "client_suite": "ML-KEM-768",
+      "server_suite": "ML-KEM-768",
+      "tamper_ciphertext": false,
+      "handshake_succeeded": true,
+      "asset_verified": true,
+      "error": "",
+      "client_state": {
+        "role": "client",
+        "configured_suite": "ML-KEM-768",
+        "negotiated_suite": "ML-KEM-768",
+        "negotiated_group": "0x0201",
+        "is_hybrid": false,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.1869,
+        "encaps_ms": 0.0,
+        "decaps_ms": 0.1494,
+        "client_share_bytes": 1184,
+        "server_share_bytes": 1088,
+        "client_hello_bytes": 1376,
+        "server_hello_bytes": 1146,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "4e42ed998f60b32d",
+        "secret_sha256_prefix": "4e42ed998f60b32d"
+      },
+      "server_state": {
+        "role": "server",
+        "configured_suite": "ML-KEM-768",
+        "negotiated_suite": "ML-KEM-768",
+        "negotiated_group": "0x0201",
+        "is_hybrid": false,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.184,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 1184,
+        "server_share_bytes": 1088,
+        "client_hello_bytes": 1376,
+        "server_hello_bytes": 1146,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "4e42ed998f60b32d",
+        "secret_sha256_prefix": "4e42ed998f60b32d"
+      },
+      "client_server_secret_match": true,
+      "mlkem_ss_match": true,
+      "keylog_labels_matched": [
+        "CLIENT_HANDSHAKE_TRAFFIC_SECRET:1b949c27e8c8a1e001c2c4d548488fe5d927ad542b4bbeffcfafdba9402ac676",
+        "CLIENT_TRAFFIC_SECRET_0:1b949c27e8c8a1e001c2c4d548488fe5d927ad542b4bbeffcfafdba9402ac676",
+        "SERVER_HANDSHAKE_TRAFFIC_SECRET:1b949c27e8c8a1e001c2c4d548488fe5d927ad542b4bbeffcfafdba9402ac676",
+        "SERVER_TRAFFIC_SECRET_0:1b949c27e8c8a1e001c2c4d548488fe5d927ad542b4bbeffcfafdba9402ac676"
+      ]
+    },
+    "X25519-ML-KEM-768": {
+      "client_suite": "X25519-ML-KEM-768",
+      "server_suite": "X25519-ML-KEM-768",
+      "tamper_ciphertext": false,
+      "handshake_succeeded": true,
+      "asset_verified": true,
+      "error": "",
+      "client_state": {
+        "role": "client",
+        "configured_suite": "X25519-ML-KEM-768",
+        "negotiated_suite": "X25519-ML-KEM-768",
+        "negotiated_group": "0x11ec",
+        "is_hybrid": true,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.197,
+        "encaps_ms": 0.0,
+        "decaps_ms": 0.1219,
+        "client_share_bytes": 1216,
+        "server_share_bytes": 1120,
+        "client_hello_bytes": 1408,
+        "server_hello_bytes": 1178,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "ea31aa1a646c3c46",
+        "secret_sha256_prefix": "9c1c24aabfbe3310"
+      },
+      "server_state": {
+        "role": "server",
+        "configured_suite": "X25519-ML-KEM-768",
+        "negotiated_suite": "X25519-ML-KEM-768",
+        "negotiated_group": "0x11ec",
+        "is_hybrid": true,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.1985,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 1216,
+        "server_share_bytes": 1120,
+        "client_hello_bytes": 1408,
+        "server_hello_bytes": 1178,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "ea31aa1a646c3c46",
+        "secret_sha256_prefix": "9c1c24aabfbe3310"
+      },
+      "client_server_secret_match": true,
+      "mlkem_ss_match": true,
+      "keylog_labels_matched": [
+        "CLIENT_HANDSHAKE_TRAFFIC_SECRET:f93e983d7a67504d70badb27f1cbbcff3befdc109b90b086ad96e61a2f3aee3e",
+        "CLIENT_TRAFFIC_SECRET_0:f93e983d7a67504d70badb27f1cbbcff3befdc109b90b086ad96e61a2f3aee3e",
+        "SERVER_HANDSHAKE_TRAFFIC_SECRET:f93e983d7a67504d70badb27f1cbbcff3befdc109b90b086ad96e61a2f3aee3e",
+        "SERVER_TRAFFIC_SECRET_0:f93e983d7a67504d70badb27f1cbbcff3befdc109b90b086ad96e61a2f3aee3e"
+      ]
+    }
+  },
+  "e2e_negative": {
+    "tamper:ML-KEM-512": {
+      "client_suite": "ML-KEM-512",
+      "server_suite": "ML-KEM-512",
+      "tamper_ciphertext": true,
+      "handshake_succeeded": false,
+      "asset_verified": false,
+      "error": "TimeoutError: ",
+      "client_state": null,
+      "server_state": {
+        "role": "server",
+        "configured_suite": "ML-KEM-512",
+        "negotiated_suite": "ML-KEM-512",
+        "negotiated_group": "0x0200",
+        "is_hybrid": false,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.1323,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 800,
+        "server_share_bytes": 768,
+        "client_hello_bytes": 992,
+        "server_hello_bytes": 826,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "42648fd06577d0ec",
+        "secret_sha256_prefix": "42648fd06577d0ec"
+      },
+      "client_server_secret_match": false,
+      "mlkem_ss_match": false,
+      "keylog_labels_matched": []
+    },
+    "tamper:ML-KEM-768": {
+      "client_suite": "ML-KEM-768",
+      "server_suite": "ML-KEM-768",
+      "tamper_ciphertext": true,
+      "handshake_succeeded": false,
+      "asset_verified": false,
+      "error": "TimeoutError: ",
+      "client_state": null,
+      "server_state": {
+        "role": "server",
+        "configured_suite": "ML-KEM-768",
+        "negotiated_suite": "ML-KEM-768",
+        "negotiated_group": "0x0201",
+        "is_hybrid": false,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.212,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 1184,
+        "server_share_bytes": 1088,
+        "client_hello_bytes": 1376,
+        "server_hello_bytes": 1146,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "4108439cbabc629c",
+        "secret_sha256_prefix": "4108439cbabc629c"
+      },
+      "client_server_secret_match": false,
+      "mlkem_ss_match": false,
+      "keylog_labels_matched": []
+    },
+    "tamper:X25519-ML-KEM-768": {
+      "client_suite": "X25519-ML-KEM-768",
+      "server_suite": "X25519-ML-KEM-768",
+      "tamper_ciphertext": true,
+      "handshake_succeeded": false,
+      "asset_verified": false,
+      "error": "TimeoutError: ",
+      "client_state": null,
+      "server_state": {
+        "role": "server",
+        "configured_suite": "X25519-ML-KEM-768",
+        "negotiated_suite": "X25519-ML-KEM-768",
+        "negotiated_group": "0x11ec",
+        "is_hybrid": true,
+        "backend_used": "liboqs",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.1909,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 1216,
+        "server_share_bytes": 1120,
+        "client_hello_bytes": 1408,
+        "server_hello_bytes": 1178,
+        "key_schedule_bound": true,
+        "mlkem_ss_sha256_prefix": "4f1e571248f0d062",
+        "secret_sha256_prefix": "666994a36299a005"
+      },
+      "client_server_secret_match": false,
+      "mlkem_ss_match": false,
+      "keylog_labels_matched": []
+    },
+    "downgrade:ML-KEM-768->X25519": {
+      "client_suite": "ML-KEM-768",
+      "server_suite": "X25519",
+      "tamper_ciphertext": false,
+      "handshake_succeeded": false,
+      "asset_verified": false,
+      "error": "ConnectionError: ",
+      "client_state": null,
+      "server_state": {
+        "role": "server",
+        "configured_suite": "X25519",
+        "negotiated_suite": "",
+        "negotiated_group": "",
+        "is_hybrid": false,
+        "backend_used": "none",
+        "keygen_ms": 0.0,
+        "encaps_ms": 0.0,
+        "decaps_ms": 0.0,
+        "client_share_bytes": 0,
+        "server_share_bytes": 0,
+        "client_hello_bytes": 0,
+        "server_hello_bytes": 0,
+        "key_schedule_bound": false,
+        "mlkem_ss_sha256_prefix": "",
+        "secret_sha256_prefix": ""
+      },
+      "client_server_secret_match": false,
+      "mlkem_ss_match": false,
+      "keylog_labels_matched": []
+    }
+  },
+  "microbenchmark": {
+    "ML-KEM-512": {
+      "backend": "liboqs",
+      "iterations": 500,
+      "keygen": {
+        "mean_us": 47.01,
+        "median_us": 45.68,
+        "p95_us": 52.64
+      },
+      "encaps": {
+        "mean_us": 56.55,
+        "median_us": 54.88,
+        "p95_us": 63.64
+      },
+      "decaps": {
+        "mean_us": 68.73,
+        "median_us": 67.12,
+        "p95_us": 77.0
+      },
+      "total_mean_us": 172.29
+    },
+    "ML-KEM-768": {
+      "backend": "liboqs",
+      "iterations": 500,
+      "keygen": {
+        "mean_us": 70.54,
+        "median_us": 68.74,
+        "p95_us": 78.68
+      },
+      "encaps": {
+        "mean_us": 80.06,
+        "median_us": 78.56,
+        "p95_us": 87.68
+      },
+      "decaps": {
+        "mean_us": 95.92,
+        "median_us": 94.0,
+        "p95_us": 104.92
+      },
+      "total_mean_us": 246.52
+    }
+  }
+}
