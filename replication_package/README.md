@@ -5,7 +5,7 @@
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![RFC: 9000](https://img.shields.io/badge/RFC-9000%20Compliant-green.svg)](https://www.rfc-editor.org/rfc/rfc9000)
 
-Reproducible systems testbed and telemetry artifacts for *IEEE Networking Letters* manuscript **NL2026-0484** (`v2.0.0`: genuine FIPS 203 `liboqs 0.12.0` integration).
+Reproducible systems testbed and telemetry artifacts for *IEEE Networking Letters* manuscript **NL2026-0484** (`v2.1.0`: genuine FIPS 203 `liboqs 0.12.0` integration).
 
 ## Key Architectural Revision (Post-Review Fix)
 Following peer-review feedback (Reviewer 1), this testbed no longer uses TLS Extension 21 size padding. Instead, `mlkem_crypto.py` and `mlkem_tls.py` execute **authentic FIPS 203 ML-KEM cryptographic operations** inside the `aioquic` TLS 1.3 handshake state machine:
@@ -59,7 +59,7 @@ docker run --rm -it --privileged -v "$(pwd)/results:/workspace/results" -v "$(pw
 ```
 
 ## Archival & Citation
-The Zenodo concept DOI [`10.5281/zenodo.22879417`](https://doi.org/10.5281/zenodo.22879417) always resolves to the latest release (including `v2.0.0` with genuine FIPS 203 `liboqs` execution and negative fault-injection verification; prior initial release `v1.0.0` is archived at `10.5281/zenodo.22879418`).
+The Zenodo concept DOI [`10.5281/zenodo.22879417`](https://doi.org/10.5281/zenodo.22879417) always resolves to the latest release (now `v2.1.0` with genuine FIPS 203 `liboqs` execution and negative fault-injection verification; prior initial release `v1.0.0` is archived at `10.5281/zenodo.22879418`).
 
 ```bibtex
 @software{sudarsan_2026_quic_mlkem,
