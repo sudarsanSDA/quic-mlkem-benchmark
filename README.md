@@ -59,7 +59,7 @@ docker run --rm -it --privileged -v "$(pwd)/results:/workspace/results" -v "$(pw
 ```
 
 ## Archival & Citation
-The Zenodo concept DOI [`10.5281/zenodo.22879417`](https://doi.org/10.5281/zenodo.22879417) always resolves to the latest release (now `v2.1.0` with genuine FIPS 203 `liboqs` execution and negative fault-injection verification; prior initial release `v1.0.0` is archived at `10.5281/zenodo.22879418`).
+The canonical Zenodo concept DOI [`10.5281/zenodo.22879417`](https://doi.org/10.5281/zenodo.22879417) always resolves to the latest versioned release (release `v2.1.0`: [`10.5281/zenodo.24154361`](https://doi.org/10.5281/zenodo.24154361), containing authentic FIPS 203 `liboqs` execution, negative fault injection, and verified PCAPs; prior initial release `v1.0.0` is archived at `10.5281/zenodo.22879418`).
 
 ```bibtex
 @software{sudarsan_2026_quic_mlkem,
